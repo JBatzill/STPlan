@@ -7,7 +7,7 @@ from server import app
 from flask import request, session, g
 
 #constants
-__SQL_SCHEMA = "database\db\stplan_schema.sql"
+__SQL_SCHEMA = "database\stplan_schema.sql"
 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
