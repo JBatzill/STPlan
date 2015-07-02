@@ -1,7 +1,7 @@
 import os
 import sqlite3
 from contextlib import closing
-from rest_server import app
+from general import app
 from flask import request, session, g
 
 
