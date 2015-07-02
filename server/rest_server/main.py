@@ -1,6 +1,7 @@
 from general import app
 from flask import request
 from rest_server import *
+from database import query_db
 
 #get schedule for given school and properties
 @app.route('/getschedule', subdomain="<school>." + SUBDOMAIN)
@@ -17,7 +18,7 @@ def get_schedule(school):
     if(days < 0):
         return create_error_message("days must be at least 0!")
 
+    res = query_db("select * from 'schedule'", [])
 
 
-
-    return str(days)
+    return str(res)

@@ -23,7 +23,9 @@ def init_db():
 @app.before_request
 def before_request():
     g.db = connect_db()
-    g.db.row_factory = sqlite3.Row
+    #method used to convert a row in a arbitrary object.
+    #Used to convert result of db requests
+    g.db.row_factory = dict_factory
 
 #executed after the response has been created
 @app.teardown_appcontext
@@ -31,6 +33,15 @@ def close_connection(exception):
     db = getattr(g, '_database', None)
     if db is not None:
         db.close()
+
+def dict_factory(cursor, row):
+    #enumerate creates (0, ..[0]) -> (1, ..[1]) -> ...
+    #description is readonly list containing 7-tuples
+    #where only the first item is not NONE but the first word of the name of the ith column
+    d = {}
+    for (idx, col) in enumerate(cursor.description):
+        d[col[0]] = row[idx]
+    return d
 
 #runs the given sql query using the given args.
 #if one=True, only the first result will be returned.
