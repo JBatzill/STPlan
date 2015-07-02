@@ -1,6 +1,3 @@
-__author__ = 'Johannes'
-
-#imports....
 import sqlite3
 from contextlib import closing
 from server import app

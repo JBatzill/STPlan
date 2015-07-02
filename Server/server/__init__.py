@@ -1,5 +1,3 @@
-__author__ = 'Johannes'
-#blabliblablub
 from flask import Flask
 
 #consts
