@@ -1,3 +1,3 @@
 #!flask/bin/python
-from server import app
+from rest_server import app
 app.run()

@@ -1,4 +1,4 @@
-from server import app
+from rest_server import app
 from flask import request
 
 #constants for http requests
@@ -13,7 +13,7 @@ def create_error_message(msg):
     return __ERROR + msg;
 
 
-#server-stuff
+#rest_server-stuff
 
 #get schedule for given school and properties
 @app.route('/getschedule', subdomain="<school>."+__SUBDOMAIN)
