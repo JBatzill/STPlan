@@ -1,5 +1,5 @@
-drop table if exists schedule;
-create table schedule (
+DROP TABLE IF EXISTS schedule;
+CREATE TABLE schedule (
   _school VARCHAR(64),
   _date DATE,
   _time TINYINT,
@@ -11,5 +11,10 @@ create table schedule (
   _new_room VARCHAR(32),
   _origin VARCHAR(64),
   _treatment VARCHAR(64),
-  _reason VARCHAR(64)
+  _reason VARCHAR(64),
+
+  PRIMARY KEY(_school, _date, _class, _time, _subject)
 );
+
+CREATE UNIQUE INDEX main_index
+ON schedule(_school, _date, _class);

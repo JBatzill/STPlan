@@ -1,7 +1,7 @@
-from general import app
+from rest_server import app
 from flask import request
-from rest_server import *
-from database import query_db
+from rest_server.constants import *
+from rest_server.database import query_db
 
 #get schedule for given school and properties
 @app.route('/getschedule', subdomain="<school>." + SUBDOMAIN)
