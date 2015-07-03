@@ -1,6 +1,7 @@
 #Personal stuff
 *.db
 *.db-journal
+*.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -50,9 +51,6 @@ coverage.xml
 # Translations
 *.mo
 *.pot
-
-# Django stuff:
-*.log
 
 # Sphinx documentation
 docs/_build/

@@ -47,6 +47,12 @@ def submit_db(db, query, args=()):
     db.commit()
     return cur.rowcount
 
+def submit_many_db(db, query, args):
+    cur = db.executemany(query, args)
+    cur.close()
+    db.commit()
+    return cur.rowcount
+
 def submit_until_db(db, script):
     cur = db.cursor()
     for (sql, dic) in script:

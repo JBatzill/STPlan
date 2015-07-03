@@ -1,17 +1,42 @@
-from database import submit_until_db
-from database.sql_commands import SQL_UPDATE_NKEY, SQL_INSERT
+import hashlib
+from database import submit_many_db, submit_db
+from database.sql_commands import SQL_DELETE_DAY_SCHOOL, SQL_INSERT
 import requests
 
 
 class BaseSupplier:
-    def get_name(self):
-        return "UNKNOWN"
+    __md5 = "Not_Initialized"
 
-    def submit_entry(self, db, param):
-        count = submit_until_db(db, [(SQL_UPDATE_NKEY, param), (SQL_INSERT, param)])
+    def submit_entrys_day(self, db, param_list, del_day=False):
+        if(del_day and len(param_list) > 0):
+            self.delete_day(db, param_list[0])
+        return submit_many_db(db, SQL_INSERT, param_list)
+
+    def delete_day(self, db, param):
+        submit_db(db, SQL_DELETE_DAY_SCHOOL, {'_school': param['_school'], '_date': param['_date']})
+
+    def check_for_change(self):
+        new_md5 = get_md5(download_website(self.get_url()))
+        if(new_md5 == self.__md5):
+            return False
+        else:
+            self.__md5 = new_md5
+            return True
+
+    #abstract methods
+    def get_name(self):
+        raise NotImplementedError()
+
+    def get_url(self):
+        raise NotImplementedError()
 
     def update(self, db):
         raise NotImplementedError()
+
+#return md5 hash
+def get_md5(data):
+    return hashlib.md5(data.encode('utf-8')).hexdigest()
+
 
 #returns code of website located at url
 def download_website(url):
