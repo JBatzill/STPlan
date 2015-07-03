@@ -3,8 +3,7 @@ from rest_server import app
 from flask import request
 from datetime import timedelta
 from rest_server.definitions import *
-from rest_server.database import query_db
-import database
+from rest_server.rest_db import query_db
 from database.sql_commands import SQL_READ_STD
 from logger import get_log_rest
 

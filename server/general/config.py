@@ -11,7 +11,7 @@ JSON_ATT_SEPERATOR = ','
 JSON_DIC_SEPERATOR = ':'
 
 #Database
-#path relative to server\database
+#path relative to server\rest_db
 SQL_SCHEMA = os.path.join('sql_commands', 'stplan_schema.sql')
 DATABASE = 'stplan.db'
 
