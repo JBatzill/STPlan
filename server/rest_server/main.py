@@ -4,6 +4,7 @@ from flask import request
 from datetime import timedelta
 from rest_server.definitions import *
 from rest_server.database import query_db
+from database import submit_db
 from database.sql_commands import SQL_READ_STD
 from logger import get_log_rest
 import json
