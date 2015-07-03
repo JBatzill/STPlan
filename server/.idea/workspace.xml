@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e00d7d03-3174-46d4-9d78-b9eb027d1bdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/pids/ReadMe.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/run_rest.py" afterPath="$PROJECT_DIR$/commands/run_rest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/run_supply.py" afterPath="$PROJECT_DIR$/commands/run_supply.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReadMe.md" afterPath="$PROJECT_DIR$/ReadMe.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Server.iws" />
@@ -43,7 +40,17 @@
         <entry file="file://$PROJECT_DIR$/general/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+              <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadMe.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReadMe.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.4074073">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -69,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_rest.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run_rest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/commands/run_rest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.33887044">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -91,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_db.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commands/create_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08471761">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
               <folding />
             </state>
@@ -172,13 +179,14 @@
         <option value="$PROJECT_DIR$/rest_server/__init__.py" />
         <option value="$PROJECT_DIR$/logger/logs/ReadMe.md" />
         <option value="$PROJECT_DIR$/rest_server/main.py" />
-        <option value="$PROJECT_DIR$/general/config.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/commands/run_rest.pid" />
         <option value="$PROJECT_DIR$/commands/pids/ReadMe.md" />
         <option value="$PROJECT_DIR$/commands/create_db.py" />
-        <option value="$PROJECT_DIR$/commands/run_rest.py" />
         <option value="$PROJECT_DIR$/commands/run_supply.py" />
+        <option value="$PROJECT_DIR$/ReadMe.md" />
+        <option value="$PROJECT_DIR$/general/config.py" />
+        <option value="$PROJECT_DIR$/commands/run_rest.py" />
       </list>
     </option>
   </component>
@@ -811,7 +819,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435955192783</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="commands&#10;+added folder pids&#10;+added autosaving of pid for&#10;++run_rest and run_supply">
+      <created>1435956443499</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1435956443499</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -872,7 +886,8 @@
     <MESSAGE value="add useless import in main.py in rest_server ... workaround?" />
     <MESSAGE value="removed useless import.&#10;Errer might have been some naming issues.&#10;&#10;renamed rest_server.database to rest_server.rest_db" />
     <MESSAGE value="commands&#10;+added #! /usr/bin/env python&#10; | can now be used as executable&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commands&#10;+added #! /usr/bin/env python&#10; | can now be used as executable&#10;" />
+    <MESSAGE value="commands&#10;+added folder pids&#10;+added autosaving of pid for&#10;++run_rest and run_supply" />
+    <option name="LAST_COMMIT_MESSAGE" value="commands&#10;+added folder pids&#10;+added autosaving of pid for&#10;++run_rest and run_supply" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1078,13 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReadMe.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/sql_commands/update_nkey.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1233,14 +1241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/general/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1257,10 +1257,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands/run_rest.py">
+    <entry file="file://$PROJECT_DIR$/commands/pids/run_rest.pid">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="34" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/create_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1273,18 +1281,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands/pids/run_rest.pid">
+    <entry file="file://$PROJECT_DIR$/ReadMe.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.4074073">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands/create_db.py">
+    <entry file="file://$PROJECT_DIR$/general/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08471761">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/run_rest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33887044">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding />
         </state>
       </provider>
