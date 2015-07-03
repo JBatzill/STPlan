@@ -6,6 +6,7 @@ from rest_server.definitions import *
 from rest_server.database import query_db
 from database.sql_commands import SQL_READ_STD
 from logger import get_log_rest
+import json
 
 #get schedule for given school and properties
 @app.route('/getschedule', subdomain="<school>." + SUBDOMAIN)
@@ -24,4 +25,4 @@ def get_schedule(school):
     get_log_rest().info("request#get_schedule: " + school + ", " + str(_days) + ", " + _class)
     res = query_db(SQL_READ_STD, [school, _today, _today + timedelta(days=_days), _class])
 
-    return str(res)
+    return json_dic(res)

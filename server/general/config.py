@@ -2,7 +2,12 @@
 DEBUG = True
 
 #Rest server
-SERVER_NAME = 'localhost:42142'
+HOST = 'localhost'
+PORT = 42142
+SERVER_NAME = 'localhost:%s' % PORT
+#Rest server.JSON
+JSON_ATT_SEPERATOR = ','
+JSON_DIC_SEPERATOR = ':'
 
 #Database
 #path relative to server\database
@@ -10,7 +15,7 @@ SQL_SCHEMA = '\sql_commands\stplan_schema.sql'
 DATABASE = '\stplan.db'
 
 #supply server
-SUPPLY_UPDATE_INTERVAL = 60 #in sec
+SUPPLY_UPDATE_INTERVAL = 5*60 #in sec
 
 #logger
 LOG_FILE = '\logs\events.log'
