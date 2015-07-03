@@ -1,11 +1,11 @@
 import os
 # configuration
-DEBUG = True
+DEBUG = True #False
 
 #Rest server
-HOST = 'localhost'
+HOST = 'localhost' #'0.0.0.0'
 PORT = 42142
-SERVER_NAME = 'localhost:%s' % PORT
+SERVER_NAME = 'localhost:%s' % PORT #'batzill.net:%s' % PORT
 #Rest server.JSON
 JSON_ATT_SEPERATOR = ','
 JSON_DIC_SEPERATOR = ':'
