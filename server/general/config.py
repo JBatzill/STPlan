@@ -10,7 +10,7 @@ SQL_SCHEMA = '\sql_commands\stplan_schema.sql'
 DATABASE = '\stplan.db'
 
 #supply server
-SUPPLY_UPDATE_INTERVAL = 30 #10*60 #in sec
+SUPPLY_UPDATE_INTERVAL = 10*60 #in sec
 
 #Security
 SECRET_KEY = 'laerjg67p39awef29gaeratp394zt'
