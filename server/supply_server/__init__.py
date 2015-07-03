@@ -3,7 +3,6 @@ import time
 from database import connect_db
 from general.config import SUPPLY_UPDATE_INTERVAL
 from supply_server.supplier.supp_wieland_gymnasium import SuppWielandGymnasium
-from supply_server.supplier.supp_test import SuppTest
 from logger import get_log_supp
 
 
