@@ -1,3 +1,4 @@
+import os
 # configuration
 DEBUG = True
 
@@ -11,14 +12,14 @@ JSON_DIC_SEPERATOR = ':'
 
 #Database
 #path relative to server\database
-SQL_SCHEMA = '\sql_commands\stplan_schema.sql'
-DATABASE = '\stplan.db'
+SQL_SCHEMA = os.path.join('sql_commands', 'stplan_schema.sql')
+DATABASE = 'stplan.db'
 
 #supply server
 SUPPLY_UPDATE_INTERVAL = 5*60 #in sec
 
 #logger
-LOG_FILE = '\logs\events.log'
+LOG_FILE = os.path.join('logs', 'events.log')
 LOG_FILE_SIZE = 1024 * 256 #bytes
 LOG_HISTORY_SIZE = 10
 

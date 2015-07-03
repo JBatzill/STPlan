@@ -13,7 +13,7 @@ LOGGER_NAME_SUPP = 'supply_server'
 
 # Add the log message handler to the logger
 formatter = logging.Formatter('[%(asctime)s] # %(levelname)8s # %(name)13s >  %(message)s')
-handler = logging.handlers.RotatingFileHandler(MAIN_DIR + LOG_FILE, maxBytes=LOG_FILE_SIZE, backupCount=LOG_HISTORY_SIZE)
+handler = logging.handlers.RotatingFileHandler(os.path.join(MAIN_DIR, LOG_FILE), maxBytes=LOG_FILE_SIZE, backupCount=LOG_HISTORY_SIZE)
 handler.setFormatter(formatter)
 
 ___main_logger = logging.getLogger(LOGGER_NAME_MAIN)

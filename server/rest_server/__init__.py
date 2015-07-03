@@ -5,8 +5,8 @@ from flask import Flask
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
 
 #consts
-__CONFIGURATION_FILE = "\..\general\config.py"
+__CONFIGURATION_FILE = os.path.join("..", "general", "config.py")
 
 app = Flask(__name__)
-app.config.from_pyfile(MAIN_DIR + __CONFIGURATION_FILE)
+app.config.from_pyfile(os.path.join(MAIN_DIR, __CONFIGURATION_FILE))
 from rest_server import main

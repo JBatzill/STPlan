@@ -2,10 +2,6 @@ import os, database
 from rest_server import app
 from flask import g
 
-#constants
-MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
-
-
 def query_db(query, args=(), one=False):
     return database.query_db(g.db, query, args, one)
 
