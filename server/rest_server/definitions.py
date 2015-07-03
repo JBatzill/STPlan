@@ -1,8 +1,9 @@
 #constants for http requests
 SUBDOMAIN = "stplan"
-DEFAULT_DAYS = 0
-DEFAULT_TEACHER = "all"
-DEFAULT_CLASS = "all"
+DEFAULT_DAYS = 365
+DEFAULT_TEACHER = "%"
+DEFAULT_SCHOOL = "%"
+DEFAULT_CLASS = "%"
 
 #create error message with unique beginning:
 ERROR = "Error: "

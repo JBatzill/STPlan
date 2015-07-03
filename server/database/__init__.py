@@ -1,7 +1,8 @@
 import sqlite3
 import os
 from contextlib import closing
-from general.config import DATABASE, SQL_SCHEMA
+from general.config import DATABASE
+from database.sql_commands import SQL_CREATE_DB
 
 #constants
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -12,8 +13,7 @@ def connect_db():
 #create db from sql schema
 def init_db():
     with closing(connect_db()) as db:
-        with open(MAIN_DIR + SQL_SCHEMA, mode='r') as f:
-            db.cursor().executescript(f.read())
+        db.cursor().executescript(SQL_CREATE_DB)
         db.commit()
 
 def dict_factory(cursor, row):
@@ -32,3 +32,4 @@ def query_db(db, query, args=(), one=False):
     res = cur.fetchall()
     cur.close()
     return (res[0] if res else None) if one else res
+
