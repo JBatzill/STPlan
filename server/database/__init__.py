@@ -44,24 +44,27 @@ def query_db(db, query, args=(), one=False):
     cur.close()
     return (res[0] if res else None) if one else res
 
-def submit_db(db, query, args=()):
+def submit_db(db, query, args=(), commit=True):
     cur = db.execute(query, args)
     cur.close()
-    db.commit()
+    if(commit):
+        db.commit()
     return cur.rowcount
 
-def submit_many_db(db, query, args):
+def submit_many_db(db, query, args, commit=True):
     cur = db.executemany(query, args)
     cur.close()
-    db.commit()
+    if(commit):
+        db.commit()
     return cur.rowcount
 
-def submit_until_db(db, script):
+def submit_until_db(db, script, commit=True):
     cur = db.cursor()
     for (sql, dic) in script:
         cur.execute(sql, dic)
         if cur.rowcount > 0:
             break
     cur.close()
-    db.commit()
+    if(commit):
+        db.commit()
     return cur.rowcount
