@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from logger import get_log_supp
 from supply_server import run, suppliers
 
