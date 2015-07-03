@@ -8,7 +8,7 @@ from logger import get_log_supp
 
 
 #list containing all existing suppliers
-suppliers = [SuppWielandGymnasium(), SuppTest()]
+suppliers = [SuppWielandGymnasium()]
 
 def run():
     while True:
