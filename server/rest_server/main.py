@@ -1,10 +1,10 @@
 from datetime import date
+from database.sql_commands import SQL_READ_STD
 from rest_server import app
 from flask import request
 from datetime import timedelta
 from rest_server.definitions import *
 from rest_server.rest_db import query_db
-from database.sql_commands import SQL_READ_STD
 from logger import get_log_rest
 
 #get schedule for given school and properties

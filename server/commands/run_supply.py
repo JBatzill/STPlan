@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 import sys, os
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(MAIN_DIR, ".."))
