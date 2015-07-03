@@ -10,7 +10,7 @@ from general.config import LOG_FILE, LOG_FILE_SIZE, LOG_HISTORY_SIZE
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
 
 LOGGER_NAME_MAIN = 'main'
-LOGGER_NAME_DB = 'rest_db'
+LOGGER_NAME_DB = 'database'
 LOGGER_NAME_REST = 'rest_server'
 LOGGER_NAME_SUPP = 'supply_server'
 
