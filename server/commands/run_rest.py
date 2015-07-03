@@ -2,6 +2,7 @@
 import sys, os
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(MAIN_DIR, ".."))
+open(os.path.join(MAIN_DIR, "pids" ,"run_rest.pid"),"w").write(str(os.getpid()))
 #----------------------------------------------------------------------------------------------------------------------
 
 
