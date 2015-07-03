@@ -1,7 +1,10 @@
-from general.config import LOG_FILE, LOG_FILE_SIZE, LOG_HISTORY_SIZE
 import logging
 import logging.handlers
 import os
+
+from general.config import LOG_FILE, LOG_FILE_SIZE, LOG_HISTORY_SIZE
+
+
 
 #constants
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))

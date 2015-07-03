@@ -1,5 +1,7 @@
 import json
+
 from general.config import JSON_ATT_SEPERATOR, JSON_DIC_SEPERATOR
+
 
 #constants for http requests
 SUBDOMAIN = "stplan"

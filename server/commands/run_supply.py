@@ -1,3 +1,9 @@
+import sys, os
+MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(MAIN_DIR, ".."))
+#----------------------------------------------------------------------------------------------------------------------
+
+
 from logger import get_log_supp
 from supply_server import run, suppliers
 

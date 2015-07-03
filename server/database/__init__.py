@@ -1,8 +1,11 @@
 import sqlite3
 import os
 from contextlib import closing
+
 from general.config import DATABASE
 from database.sql_commands import SQL_CREATE_DB
+
+
 
 #constants
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
