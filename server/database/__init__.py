@@ -25,6 +25,14 @@ def dict_factory(cursor, row):
         d[col[0]] = row[idx]
     return d
 
+def create_dictionary(_school="", _date="", _class="", _time="", _subject="", _teacher="", _new_subject="",\
+                      _new_teacher="", _new_room="", _origin="", _treatment="", _reason=""):
+    return {"_school": _school, "_date": _date, "_class": _class, "_time": _time,\
+            "_subject": _subject, "_teacher": _teacher, "_new_subject": _new_subject,\
+            "_new_teacher": _new_teacher, "_new_room": _new_room, "_origin": _origin,\
+            "_treatment": _treatment, "_reason": _reason}
+
+
 #runs the given sql query using the given args.
 #if one=True, only the first result will be returned.
 def query_db(db, query, args=(), one=False):
@@ -33,3 +41,18 @@ def query_db(db, query, args=(), one=False):
     cur.close()
     return (res[0] if res else None) if one else res
 
+def submit_db(db, query, args=()):
+    cur = db.execute(query, args)
+    cur.close()
+    db.commit()
+    return cur.rowcount
+
+def submit_until_db(db, script):
+    cur = db.cursor()
+    for (sql, dic) in script:
+        cur.execute(sql, dic)
+        if cur.rowcount > 0:
+            break
+    cur.close()
+    db.commit()
+    return cur.rowcount
