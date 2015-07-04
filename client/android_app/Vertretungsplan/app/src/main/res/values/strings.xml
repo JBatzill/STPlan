@@ -2,7 +2,14 @@
 <resources>
 
     <string name="app_name">Vertretungsplan</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="hint_class">Klasse</string>
+    <string name="hint_school">Schule</string>
+
+    <string-array name="days_array">
+        <item>Heute</item>
+        <item>Morgen</item>
+        <item>Alles</item>
+    </string-array>
 
 </resources>

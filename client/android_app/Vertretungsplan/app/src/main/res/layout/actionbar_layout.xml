@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/invisible"
+        android:focusable="true" android:focusableInTouchMode="true"
+        android:layout_width="0px" android:layout_height="0px"/>
+
+    <AutoCompleteTextView android:paddingLeft="12dp" android:singleLine="true" android:id="@+id/txt_school"  android:hint="@string/hint_school"
+        android:textColorHint="@color/LightGray" android:background="@drawable/primary_color_animation"
+        android:layout_weight="2" android:layout_width="0dp" android:layout_height="match_parent" />
+
+    <EditText android:singleLine="true" android:id="@+id/txt_class"  android:hint="@string/hint_class" android:textColorHint="@color/LightGray" android:gravity="center" android:background="@drawable/primary_color_animation" android:layout_weight="1"
+        android:layout_width="0dp" android:layout_height="match_parent" />
+
+    <Spinner  android:id="@+id/sp_day" android:background="@drawable/primary_color_animation"
+        android:layout_weight="1" android:layout_width="0dp" android:layout_height="match_parent">
+    </Spinner>
+
+</LinearLayout>
