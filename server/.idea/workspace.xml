@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e00d7d03-3174-46d4-9d78-b9eb027d1bdd" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\supply_server\supplier\supp_test.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supply_server/__init__.py" afterPath="$PROJECT_DIR$/supply_server/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest_server/main.py" afterPath="$PROJECT_DIR$/rest_server/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Server.iws" />
@@ -114,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/logger/logs/events.log">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="152" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="121" selection-end-column="87" />
+              <caret line="153" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="121" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -870,7 +867,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435967236353</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="removed test stuff, found prob">
+      <created>1435967887984</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1435967887984</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -910,7 +913,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="All path are now relative to its module.&#10;moved config to root folder" />
     <MESSAGE value="created folder &quot;general&quot; and included initialization + config file" />
     <MESSAGE value="restructured project. &#10;- database independent of the rest.&#10;- rest_server is programm on its on.&#10;&#10;scripts created:&#10;- run_rest&#10;- create_db" />
     <MESSAGE value="finished sql query for standard schedule.&#10;add sql_commands folder" />
@@ -935,7 +937,8 @@
     <MESSAGE value="changed readme" />
     <MESSAGE value="fixed concurrency prob.&#10;If supply_server got killed between deleting day and inserting day, the whole day got lost." />
     <MESSAGE value="added test data creator stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test data creator stuff" />
+    <MESSAGE value="removed test stuff, found prob" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed test stuff, found prob" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1285,7 +1288,7 @@
     <entry file="file://$PROJECT_DIR$/logger/logs/events.log">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="121" selection-end-column="87" />
+          <caret line="153" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="121" selection-end-column="87" />
           <folding />
         </state>
       </provider>
@@ -1306,14 +1309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supply_server/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/supply_server/supplier/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1321,6 +1316,14 @@
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supply_server/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
