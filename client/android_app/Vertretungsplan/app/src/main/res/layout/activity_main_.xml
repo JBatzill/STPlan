@@ -2,18 +2,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main_Activity"
-    android:clickable="true"
-    android:focusable="true"
-    android:focusableInTouchMode="true">
+    tools:context=".Main_Activity">
 
-    <ListView
-        android:id="@+id/lv_schedule"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <View android:id="@+id/main_focus_taker"
+        android:elevation="50dp"
+        android:visibility="gone"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_margin="0dp"
         android:clickable="true"
         android:focusable="true"
-        android:focusableInTouchMode="true">
+        android:focusableInTouchMode="true" />
+
+    <ListView
+        android:background="@android:color/white"
+        android:id="@+id/lv_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </ListView>
 

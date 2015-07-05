@@ -3,13 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:id="@+id/invisible"
-        android:focusable="true" android:focusableInTouchMode="true"
-        android:layout_width="0px" android:layout_height="0px"/>
+    android:orientation="horizontal" android:clipToPadding="false">
 
     <AutoCompleteTextView android:paddingLeft="12dp" android:paddingRight="6dp" android:singleLine="true" android:id="@+id/txt_school"  android:hint="@string/hint_school"
         android:textColorHint="@color/LightGray" android:background="@drawable/primary_color_animation"

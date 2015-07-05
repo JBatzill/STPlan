@@ -12,6 +12,5 @@
     </style>
 
     <style name="ScheduleItem_Main">
-        <item name="android:elevation">10dp</item>
     </style>
 </resources>

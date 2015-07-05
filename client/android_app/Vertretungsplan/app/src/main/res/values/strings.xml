@@ -6,10 +6,20 @@
     <string name="hint_class">Klasse</string>
     <string name="hint_school">Schule</string>
 
-    <string-array name="days_array">
+    <string-array name="date_search_array">
         <item>Heute</item>
         <item>Morgen</item>
         <item>Alles</item>
+    </string-array>
+
+    <string-array name="day_shortcuts_array">
+        <item>So</item>
+        <item>Mo</item>
+        <item>Di</item>
+        <item>Mi</item>
+        <item>Do</item>
+        <item>Fr</item>
+        <item>Sa</item>
     </string-array>
 
 </resources>

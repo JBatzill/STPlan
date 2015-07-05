@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="ColorPrimaryBright">#ffff413e</color>
     <color name="ColorPrimary">#dd0000</color>
     <color name="ColorPrimaryDark">#bb0000</color>
     <color name="TextColorPrimary">#ffffff</color>
 
     <color name="LightGray">#ffaeaeae</color>
+    <color name="MidGray">#ff525252</color>
+    <color name="DarkShadow">#444444</color>
 
 </resources>

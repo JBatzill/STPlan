@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -28,10 +29,16 @@ public class Main_Activity extends Activity {
 
     private final int sdkVersion = Build.VERSION.SDK_INT;
 
-    private LinearLayout.LayoutParams paramExpanded = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 10f);
-    private LinearLayout.LayoutParams paramCollapsed_1 = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 1f);
-    private LinearLayout.LayoutParams paramCollapsed_2 = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 2f);
 
+    private LinearLayout.LayoutParams paramCollapsed_invis = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 0f);
+    private LinearLayout.LayoutParams paramCollapsed_small = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 1f);
+    private LinearLayout.LayoutParams paramCollapsed_big = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 2f);
+
+    private View focus_taker;
+    private LinearLayout actionBarLayout;
+    private AutoCompleteTextView txt_school;
+    private EditText txt_class;
+    private Spinner sp_day;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +48,7 @@ public class Main_Activity extends Activity {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
-        LinearLayout actionBarLayout = (LinearLayout)getLayoutInflater().inflate(R.layout.actionbar_layout, null);
+        actionBarLayout = (LinearLayout)getLayoutInflater().inflate(R.layout.actionbar_layout, null);
         ActionBar.LayoutParams params = new ActionBar.LayoutParams(
                 ActionBar.LayoutParams.MATCH_PARENT,
                 ActionBar.LayoutParams.MATCH_PARENT,
@@ -50,33 +57,38 @@ public class Main_Activity extends Activity {
         actionBar.setCustomView(actionBarLayout, params);
         actionBar.setDisplayHomeAsUpEnabled(false);
 
+        focus_taker = (View)this.findViewById(R.id.main_focus_taker);
+
+
         this.setListener();
     }
 
     private void setListener() {
-        final LinearLayout invis = (LinearLayout)this.findViewById(R.id.invisible);
 
-        final EditText txt_class = (EditText)this.findViewById(R.id.txt_class);
+        focus_taker.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus) {
+                    resetActionBar();
+                    hideKeyboard();
+                    v.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        txt_class = (EditText)this.findViewById(R.id.txt_class);
         txt_class.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
-                    txt_class.setLayoutParams(paramExpanded);
-                    if (sdkVersion >= Build.VERSION_CODES.LOLLIPOP) {
-                        txt_class.setTranslationZ(20);
-                    }
-                } else {
-                    txt_class.setLayoutParams(paramCollapsed_1);
-                    if (sdkVersion >= Build.VERSION_CODES.LOLLIPOP) {
-                        txt_class.setTranslationZ(0);
-                    }
+                    focusTextBox(v);
                 }
             }
         });
 
         //----------------------------------------------------------------------------------------------------
 
-        final AutoCompleteTextView txt_school = (AutoCompleteTextView)this.findViewById(R.id.txt_school);
+        txt_school = (AutoCompleteTextView)this.findViewById(R.id.txt_school);
 
         String[] countries = {"abcd", "efg", "ironman", "whatever", "superman"};
         ArrayAdapter<String> adapter_school = new ArrayAdapter<String>(this, R.layout.acomplete_drop_item_normal,countries);
@@ -86,31 +98,23 @@ public class Main_Activity extends Activity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
-                    txt_school.setLayoutParams(paramExpanded);
-                    if (sdkVersion >= Build.VERSION_CODES.LOLLIPOP) {
-                        txt_school.setTranslationZ(20);
-                    }
-                } else {
-                    txt_school.setLayoutParams(paramCollapsed_2);
-                    if (sdkVersion >= Build.VERSION_CODES.LOLLIPOP) {
-                        txt_school.setTranslationZ(0);
-                    }
+                    focusTextBox(v);
                 }
             }
         });
 
         //----------------------------------------------------------------------------------------------------
-        final Spinner sp_day = (Spinner)this.findViewById(R.id.sp_day);
+        sp_day = (Spinner)this.findViewById(R.id.sp_day);
 
         ArrayAdapter<CharSequence> adapter_day = ArrayAdapter.createFromResource(this,
-                R.array.days_array, R.layout.spinner_item_normal);
+                R.array.date_search_array, R.layout.spinner_item_normal);
         adapter_day.setDropDownViewResource(R.layout.spinner_drop_item_normal);
         sp_day.setAdapter(adapter_day);
 
         sp_day.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                invis.requestFocus();
+                unfocusTextBoxes();
                 return false;
             }
         });
@@ -127,10 +131,84 @@ public class Main_Activity extends Activity {
 
         //------------------------------------------------------------------------------------------
         final ListView lv_schedule = (ListView)this.findViewById(R.id.lv_schedule);
-        ScheduleEntry data[] = new ScheduleEntry[]{ new ScheduleEntry("wg", new Date(100000), "11d", (short)42, "awef", "awef", "awef", "awef", "awef", "awef", "awef", "awef") };
-        ScheduleAdapter adapter_schedule = new ScheduleAdapter(getBaseContext(), data);
+        ScheduleEntry data[] = new ScheduleEntry[]{ new ScheduleEntry("wg", new Date(100000), "11d", (short)42, "subjecT", "teacheR", "new subjecT", "new teacheR", "new rooM", "origiN", "treatmenT", "reasoN"),
+                new ScheduleEntry("wg", new Date(System.currentTimeMillis()), "9e", (short)42, "subjecT", "teacheR", "new subjecT", "new teacheR", "new rooM", "origiN", "treatmenT", "reasoN"),
+                new ScheduleEntry("wg", new Date(System.currentTimeMillis()), "5a", (short)42, "subjecT", "teacheR", "new subjecT", "new teacheR", "new rooM", "origiN", "treatmenT", "reasoN"),
+                new ScheduleEntry("wg", new Date(System.currentTimeMillis()), "6a", (short)12, "subjecT", "teacheR", "new subjecT", "new teacheR", "new rooM", "origiN", "treatmenT", "reasoN")};
+        ScheduleAdapter adapter_schedule = new ScheduleAdapter(this, data);
         lv_schedule.setAdapter(adapter_schedule);
+
+        lv_schedule.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                LinearLayout vi = (LinearLayout)view.findViewById(R.id.schedule_row_extra);
+
+                if(vi.getVisibility() == View.VISIBLE) {
+                    vi.setVisibility(View.GONE);
+/*                    if (sdkVersion >= Build.VERSION_CODES.LOLLIPOP) {
+                        vi.setTranslationZ(-30);
+                    }*/
+                } else {
+                    vi.setVisibility(View.VISIBLE);
+//                    if (sdkVersion >= Build.VERSION_CODES.LOLLIPOP) {
+//                        vi.setTranslationZ(0);
+//                    }
+                }
+            }
+        });
     }
+
+    private void unfocusTextBoxes() {
+        focus_taker.requestFocus();
+    }
+
+    private void hideKeyboard() {
+        //hide keyboard
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(
+                    this.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+    }
+
+    private void resetActionBar() {
+        actionBarLayout.setPadding(0,0,0,0);
+
+        this.txt_school.setLayoutParams(paramCollapsed_big);
+        this.txt_class.setLayoutParams(paramCollapsed_small);
+        this.sp_day.setLayoutParams(paramCollapsed_small);
+
+       if (sdkVersion >= Build.VERSION_CODES.LOLLIPOP) {
+            this.txt_school.setTranslationZ(0);
+            this.txt_class.setTranslationZ(0);
+            this.sp_day.setTranslationZ(0);
+        }
+    }
+
+    private void focusTextBox(View view) {
+        this.resetActionBar();
+
+        int pt = this.pt_to_px(6);
+        actionBarLayout.setPadding(pt, pt, pt, pt);
+
+        this.txt_school.setLayoutParams(paramCollapsed_invis);
+        this.txt_class.setLayoutParams(paramCollapsed_invis);
+        this.sp_day.setLayoutParams(paramCollapsed_invis);
+
+        view.setLayoutParams(paramCollapsed_big);
+        if (sdkVersion >= Build.VERSION_CODES.LOLLIPOP) {
+            view.setTranslationZ(this.pt_to_px(5));
+        }
+
+        focus_taker.setVisibility(View.VISIBLE);
+    }
+
+    public int pt_to_px(float dp) {
+        float scale = getResources().getDisplayMetrics().density;
+        return (int) (dp*scale + 0.5f);
+    }
+
 
 
     @Override
