@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="ColorPrimaryBright">#ffff413e</color>
-    <color name="ColorPrimary">#dd0000</color>
-    <color name="ColorPrimaryDark">#bb0000</color>
+    <color name="ColorPrimaryBright">#fff43f36</color>
+    <color name="ColorPrimary">#ffdd2a24</color>
+    <color name="ColorPrimaryDark">#ffbf2721</color>
     <color name="TextColorPrimary">#ffffff</color>
 
     <color name="LightGray">#ffaeaeae</color>
