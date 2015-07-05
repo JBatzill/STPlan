@@ -13,10 +13,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
-import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import net.batzill.vertretungsplan.adapter.ScheduleAdapter;
+import net.batzill.vertretungsplan.container.ScheduleEntry;
+
+import java.util.Date;
 
 
 public class Main_Activity extends Activity {
@@ -119,6 +124,12 @@ public class Main_Activity extends Activity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+
+        //------------------------------------------------------------------------------------------
+        final ListView lv_schedule = (ListView)this.findViewById(R.id.lv_schedule);
+        ScheduleEntry data[] = new ScheduleEntry[]{ new ScheduleEntry("wg", new Date(100000), "11d", (short)42, "awef", "awef", "awef", "awef", "awef", "awef", "awef", "awef") };
+        ScheduleAdapter adapter_schedule = new ScheduleAdapter(getBaseContext(), data);
+        lv_schedule.setAdapter(adapter_schedule);
     }
 
 
