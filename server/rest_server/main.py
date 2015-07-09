@@ -1,27 +1,44 @@
-from datetime import date
-from database.sql_commands import SQL_READ_STD
 from rest_server import app
 from flask import request
-from datetime import timedelta
 from rest_server.definitions import *
-from rest_server.rest_db import query_db
-from logger import get_log_rest
+import general
+from database.controller import ctrl_schedule, ctrl_school
+from rest_server.rest_db import get_db
+
+#get all schools
+@app.route('/getschools', subdomain=SUBDOMAIN)
+def get_schools():
+    try:
+        res = ctrl_school.get_schools(get_db())
+    except ValueError as e:
+        return general.create_error_message(str(e))
+
+    return general.json_dic(res)
 
 #get schedule for given school and properties
-@app.route('/getschedule', subdomain="<school>." + SUBDOMAIN)
-def get_schedule(school):
+@app.route('/', subdomain="<school_id>." + SUBDOMAIN)
+def get_school(school_id):
     try:
-        _days = int(request.args.get('days', DEFAULT_DAYS))
-        _class = request.args.get('class', DEFAULT_CLASS)
+        _school_id = int(school_id)
+        res = ctrl_school.get_school(get_db(), _school_id)
+    except ValueError as e:
+        return general.create_error_message(str(e))
+
+    return general.json_dic(res)
+
+#get schedule for given school and properties
+@app.route('/getschedule', subdomain="<school_id>." + SUBDOMAIN)
+def get_schedule(school_id):
+    try:
+        _school_id = int(school_id)
+        _days = int(request.args.get('days', ctrl_schedule.DEFAULT_DAYS))
+        _class = request.args.get('class', ctrl_schedule.DEFAULT_CLASS)
     except ValueError:
-        return create_error_message("Unable to convert given parameter!");
+        return general.create_error_message("Unable to convert given parameter!");
 
-    if _days < 0:
-        return create_error_message("days must be at least 0!")
+    try:
+        res = ctrl_schedule.get_schedules(get_db, _school_id, _days, _class)
+    except ValueError as e:
+        return general.create_error_message(str(e))
 
-    _today = date.today()
-
-    get_log_rest().info("request#get_schedule: " + school + ", " + str(_days) + ", " + _class)
-    res = query_db(SQL_READ_STD, [school, _today, _today + timedelta(days=_days), _class])
-
-    return json_dic(res)
+    return general.json_dic(res)

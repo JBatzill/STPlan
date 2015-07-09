@@ -1,4 +1,4 @@
-from supply_server.supplier import *
+from supply_server.parser import *
 from datetime import date
 
 
@@ -19,14 +19,14 @@ TAG_ROW_END = '</tr>'
 TAG_CELL_START = '<td class="list">'
 TAG_CELL_END = '</td>'
 
-class SuppWielandGymnasium(BaseSupplier):
+class ParserWielandGymnasium(BaseParser):
     def get_name(self):
         return SCHOOL_NAME
 
     def get_url(self):
         return WEBSITE_URL
 
-    def update(self, db):
+    def parse(self, db):
         page = download_website(WEBSITE_URL)
 
         #prepare, get rid of "bla' >" .... convert to "bla'>" and similar stuff

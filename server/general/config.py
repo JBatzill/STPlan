@@ -16,7 +16,7 @@ SQL_SCHEMA = os.path.join('sql_commands', 'stplan_schema.sql')
 DATABASE = 'stplan.db'
 
 #supply server
-SUPPLY_UPDATE_INTERVAL = 5*60 #in sec
+SUPPLY_UPDATE_INTERVAL = 1*60 #in sec
 
 #logger
 LOG_FILE = os.path.join('logs', 'events.log')

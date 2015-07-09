@@ -1,9 +1,11 @@
-import os, database
+import database
 from rest_server import app
 from flask import g
 
-def query_db(query, args=(), one=False):
-    return database.query_db(g.db, query, args, one)
+
+
+def get_db():
+    return g.db
 
 #executed before the db request
 @app.before_request

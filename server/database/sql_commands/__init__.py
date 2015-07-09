@@ -9,8 +9,11 @@ def __read_command(file):
 
 #SQL_COMMANDS
 SQL_CREATE_DB = __read_command("stplan_schema.sql")
-SQL_READ_STD = __read_command("read_std.sql")
-SQL_UPDATE_NKEY = __read_command("update_nkey.sql")
-SQL_INSERT = __read_command("insert.sql")
-SQL_DELETE_DAY_SCHOOL = __read_command("delete_day_school.sql")
 
+SQL_SCHEDULE_READ_STD = __read_command("schedule_read_std.sql")
+SQL_SCHEDULE_INSERT_ENTRY = __read_command("schedule_insert_entry.sql")
+SQL_SCHEDULE_DELETE_ENTRY = __read_command("schedule_delete_entry.sql")
+
+SQL_SCHOOL_READ_ALL = __read_command("school_read_all.sql")
+SQL_SCHOOL_READ_ID = __read_command("school_read_id.sql")
+SQL_SCHOOL_INSERT_ENTRY = __read_command("school_insert_entry.sql")

@@ -1,19 +1,19 @@
 import hashlib
 from database import submit_many_db, submit_db
-from database.sql_commands import SQL_DELETE_DAY_SCHOOL, SQL_INSERT
+from database.sql_commands import SQL_SCHEDULE_DELETE_ENTRY, SQL_SCHEDULE_INSERT_ENTRY
 import requests
 
 
-class BaseSupplier:
+class BaseParser:
     __md5 = "Not_Initialized"
 
     def submit_entrys_day(self, db, param_list, del_day=False):
         if(del_day and len(param_list) > 0):
             self.delete_day(db, param_list[0], False)
-        return submit_many_db(db, SQL_INSERT, param_list)
+        return submit_many_db(db, SQL_SCHEDULE_INSERT_ENTRY, param_list)
 
     def delete_day(self, db, param, commit=True):
-        submit_db(db, SQL_DELETE_DAY_SCHOOL, {'_school': param['_school'], '_date': param['_date']}, commit)
+        submit_db(db, SQL_SCHEDULE_DELETE_ENTRY, {'_school': param['_school'], '_date': param['_date']}, commit)
 
     def check_for_change(self):
         new_md5 = get_md5(download_website(self.get_url()))
@@ -30,7 +30,7 @@ class BaseSupplier:
     def get_url(self):
         raise NotImplementedError()
 
-    def update(self, db):
+    def parse(self, db):
         raise NotImplementedError()
 
 #return md5 hash
