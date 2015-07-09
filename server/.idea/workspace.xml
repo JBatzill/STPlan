@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e00d7d03-3174-46d4-9d78-b9eb027d1bdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/controller/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/controller/ctrl_schedule.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/controller/ctrl_school.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/supply_server/processor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest_server/rest_db.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/run_add_school.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/run_create_db.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/schedule_delete_entry.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/schedule_insert_entry.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/school_insert_entry.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/school_read_all.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/school_read_id.sql" />
-      <change type="DELETED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\commands\create_db.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\database\sql_commands\delete_day_school.sql" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\database\sql_commands\insert.sql" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\database\sql_commands\update_nkey.sql" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\rest_server\rest_db\__init__.py" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\database\sql_commands\read_std.sql" afterPath="$PROJECT_DIR$/database/sql_commands/schedule_read_std.sql" />
-      <change type="MOVED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\supply_server\supplier\__init__.py" afterPath="$PROJECT_DIR$/supply_server/parser/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\supply_server\supplier\supp_wieland_gymnasium.py" afterPath="$PROJECT_DIR$/supply_server/parser/parser_wieland_gymnasium.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/__init__.py" afterPath="$PROJECT_DIR$/database/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/sql_commands/__init__.py" afterPath="$PROJECT_DIR$/database/sql_commands/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/general/__init__.py" afterPath="$PROJECT_DIR$/general/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supply_server/__init__.py" afterPath="$PROJECT_DIR$/supply_server/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/general/config.py" afterPath="$PROJECT_DIR$/general/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest_server/definitions.py" afterPath="$PROJECT_DIR$/rest_server/definitions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest_server/main.py" afterPath="$PROJECT_DIR$/rest_server/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/sql_commands/stplan_schema.sql" afterPath="$PROJECT_DIR$/database/sql_commands/stplan_schema.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supply_server/processor.py" afterPath="$PROJECT_DIR$/supply_server/processor.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Server.iws" />
@@ -78,18 +50,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctrl_school.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/controller/ctrl_school.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -149,8 +109,18 @@
       <file leaf-file-name="processor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/supply_server/processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07580825">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.112769485">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -788,27 +758,33 @@
       <option name="project" value="LOCAL" />
       <updated>1436319266912</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="database&#10;+added school controler&#10;+added schedule controler&#10;+adjusted sql files&#10;+added school sql files&#10;&#10;general&#10;+added create error msg&#10;+added json converting of dic&#10;&#10;rest_server&#10;+removed rest_db folder&#10;+added rest_db file&#10;+moved default defs to database controler&#10;+moved general functions to general&#10;+added error handling for sql requests inf rest stuff&#10;+added school requests&#10;&#10;supply_server&#10;+renamed supllier to parser&#10;+renamed update to parse&#10;+created processor and added process function stub&#10;">
+      <created>1436415403894</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1436415403894</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15806112" sideWeight="0.49624062" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.49367756" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31783783" sideWeight="0.4915701" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31709957" sideWeight="0.4915701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15806112" sideWeight="0.49624062" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3665254" sideWeight="0.5037594" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39783785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -828,7 +804,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="restructured project. &#10;- database independent of the rest.&#10;- rest_server is programm on its on.&#10;&#10;scripts created:&#10;- run_rest&#10;- create_db" />
     <MESSAGE value="finished sql query for standard schedule.&#10;add sql_commands folder" />
     <MESSAGE value="sql:&#10;+ update&#10;+ insert&#10;&#10;database&#10;+submit&#10;+submit while nothing happend&#10;+index not unique anymore&#10;&#10;supply&#10;+supply method&#10;+supply base class&#10;+wieland-gymnasium skeleton&#10;&#10;commands&#10;+created commands folder&#10;+moved all comands in comands folder" />
     <MESSAGE value="supply:&#10;+added basic functions for extraction&#10;+finished wieland-gymnasium supplier&#10;+added basic analysis for updating" />
@@ -853,7 +828,8 @@
     <MESSAGE value="added test data creator stuff" />
     <MESSAGE value="removed test stuff, found prob" />
     <MESSAGE value="updated database design" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated database design" />
+    <MESSAGE value="database&#10;+added school controler&#10;+added schedule controler&#10;+adjusted sql files&#10;+added school sql files&#10;&#10;general&#10;+added create error msg&#10;+added json converting of dic&#10;&#10;rest_server&#10;+removed rest_db folder&#10;+added rest_db file&#10;+moved default defs to database controler&#10;+moved general functions to general&#10;+added error handling for sql requests inf rest stuff&#10;+added school requests&#10;&#10;supply_server&#10;+renamed supllier to parser&#10;+renamed update to parse&#10;+created processor and added process function stub&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="database&#10;+added school controler&#10;+added schedule controler&#10;+adjusted sql files&#10;+added school sql files&#10;&#10;general&#10;+added create error msg&#10;+added json converting of dic&#10;&#10;rest_server&#10;+removed rest_db folder&#10;+added rest_db file&#10;+moved default defs to database controler&#10;+moved general functions to general&#10;+added error handling for sql requests inf rest stuff&#10;+added school requests&#10;&#10;supply_server&#10;+renamed supllier to parser&#10;+renamed update to parse&#10;+created processor and added process function stub&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1131,14 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.056384742">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/school.id">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16915423">
@@ -1195,6 +1163,7 @@
           <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <marker date="1436412882906" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1265,10 +1234,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/supply_server/processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07580825">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.112769485">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
