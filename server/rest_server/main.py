@@ -37,7 +37,7 @@ def get_schedule(school_id):
         return general.create_error_message("Unable to convert given parameter!");
 
     try:
-        res = ctrl_schedule.get_schedules(get_db, _school_id, _days, _class)
+        res = ctrl_schedule.get_schedule_for_date(get_db, _school_id, _days, _class)
     except ValueError as e:
         return general.create_error_message(str(e))
 

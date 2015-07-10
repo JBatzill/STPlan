@@ -1,0 +1,3 @@
+#school + date + class + time + teacher + new teacher identifies entry uniquely
+    [without teacher or new teacher not enough, saw counter example on wg homepage: no teacher + no subject as well as two same different teacher
+#notifications only unique key is if everything is key ....

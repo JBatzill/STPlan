@@ -28,8 +28,8 @@ def get_schools(db):
     return database.query_db(db, sql_commands.SQL_SCHOOL_READ_ALL)
 
 def get_school(db, _school_id):
-    if _school_id < 0:
+    if int(_school_id) < 0:
         raise ValueError("school id must be at least 0!")
 
     dic = create_dictionary(_id=_school_id)
-    return database.query_db(db, sql_commands.SQL_SCHOOL_READ_ID, dic)
+    return database.query_db(db, sql_commands.SQL_SCHOOL_READ_ID, dic, True)

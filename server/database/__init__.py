@@ -11,7 +11,9 @@ from database.sql_commands import SQL_CREATE_DB
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def connect_db():
-    return sqlite3.connect(os.path.join(MAIN_DIR, DATABASE))
+    db = sqlite3.connect(os.path.join(MAIN_DIR, DATABASE))
+    db.row_factory = dict_factory
+    return db
 
 #create db from sql schema
 def init_db():

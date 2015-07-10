@@ -11,9 +11,6 @@ def get_db():
 @app.before_request
 def before_request():
     g.db = database.connect_db()
-    #method used to convert a row in a arbitrary object.
-    #Used to convert result of db requests
-    g.db.row_factory = database.dict_factory
 
 #executed after the response has been created
 @app.teardown_appcontext

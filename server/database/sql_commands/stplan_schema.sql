@@ -35,6 +35,8 @@ CREATE TABLE schedule (
 
 CREATE INDEX index_schedule_main
 ON schedule(_school_id, _date, _class);
+CREATE UNIQUE INDEX index_schedule_unique
+ON schedule(_school_id, _date, _class,_time,_teacher,_new_teacher);
 
 DROP TABLE IF EXISTS notification;
 CREATE TABLE notification (
@@ -47,6 +49,3 @@ CREATE TABLE notification (
   PRIMARY KEY(_id),
   FOREIGN KEY(_school_id) REFERENCES school(_id)
 );
-
-CREATE INDEX index_notification_main
-ON notification(_school_id, _date);
