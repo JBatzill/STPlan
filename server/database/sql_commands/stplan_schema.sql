@@ -7,6 +7,8 @@ CREATE TABLE school (
   _state VARCHAR(32),
   _country VARCHAR(32),
   _schedule_url TEXT NOT NULL,
+  _username TEXT,
+  _password TEXT,
   _last_update_info TEXT,
 
   PRIMARY KEY(_id)
@@ -49,3 +51,30 @@ CREATE TABLE notification (
   PRIMARY KEY(_id),
   FOREIGN KEY(_school_id) REFERENCES school(_id)
 );
+
+DROP TABLE IF EXISTS user;
+CREATE TABLE user {
+  _id INTEGER,
+  _uuid VARCHAR(128),
+  _reg_id TEXT,
+
+  PRIMARY KEY(_id)
+};
+
+CREATE UNIQUE INDEX index_user
+ON user(_uuid);
+
+DROP TABLE IF EXISTS subscription;
+CREATE TABLE subscription {
+  _id INTEGER,
+  _user_id INTEGER,
+  _school_id INTEGER,
+  _class VARCHAR(16) NOT NULL,
+
+  PRIMARY KEY(_id),
+  FOREIGN KEY(_user_id) REFERENCES user(_id),
+  FOREIGN KEY(_school_id) REFERENCES school(_id)
+};
+
+CREATE INDEX index_sub
+ON subscription(_user_id);

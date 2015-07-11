@@ -1,1 +1,1 @@
-SELECT * FROM school WHERE _id = :_id;
+SELECT * FROM 'school' WHERE _id = :_id;

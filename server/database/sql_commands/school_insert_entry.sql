@@ -1,1 +1,2 @@
-INSERT INTO 'school'(_name, _shortcut, _city, _state, _country, _schedule_url, _last_update_info) VALUES (:_name, :_shortcut, :_city, :_state, :_country, :_schedule_url, :_last_update_info);
+INSERT INTO 'school'(_name, _shortcut, _city, _state, _country, _schedule_url, _username, _password, _last_update_info)
+VALUES (:_name, :_shortcut, :_city, :_state, :_country, :_schedule_url, :_username, :_password, :_last_update_info);

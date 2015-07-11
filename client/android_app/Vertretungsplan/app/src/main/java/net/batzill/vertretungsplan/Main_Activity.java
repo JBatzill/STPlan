@@ -2,8 +2,11 @@ package net.batzill.vertretungsplan;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,9 +22,14 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.gcm.GcmPubSub;
+import com.google.android.gms.gcm.GoogleCloudMessaging;
+import com.google.android.gms.iid.InstanceID;
+
 import net.batzill.vertretungsplan.adapter.ScheduleAdapter;
 import net.batzill.vertretungsplan.container.ScheduleEntry;
 
+import java.io.IOException;
 import java.util.Date;
 
 
@@ -59,8 +67,33 @@ public class Main_Activity extends Activity {
 
         focus_taker = (View)this.findViewById(R.id.main_focus_taker);
 
+        this.initGCM();
 
         this.setListener();
+    }
+
+    private void initGCM() {
+
+
+        String a = Settings.Secure.ANDROID_ID;
+
+        final Context context = this;
+
+        new Thread(new Runnable() {
+            public void run() {
+                try {
+                    InstanceID instanceID = InstanceID.getInstance(context);
+                    instanceID.deleteToken("563837413715", GoogleCloudMessaging.INSTANCE_ID_SCOPE);
+                    String token = instanceID.getToken("563837413715", GoogleCloudMessaging.INSTANCE_ID_SCOPE);
+
+                    Log.println(1, "token", token);
+
+                    GcmPubSub.getInstance(context).subscribe(token, "/topics/test2", null);
+                } catch (IOException ex) {
+                    //lol
+                }
+            }
+        }).start();
     }
 
     private void setListener() {

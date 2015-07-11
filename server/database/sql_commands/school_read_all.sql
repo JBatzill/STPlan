@@ -1,1 +1,1 @@
-SELECT * FROM school;
+SELECT * FROM 'school';

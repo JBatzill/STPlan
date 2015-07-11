@@ -22,3 +22,6 @@ SQL_NOTIFICATION_DELETE_ENTRY = __read_command("notification_delete_entry.sql")
 SQL_SCHOOL_READ_ALL = __read_command("school_read_all.sql")
 SQL_SCHOOL_READ_ID = __read_command("school_read_id.sql")
 SQL_SCHOOL_INSERT_ENTRY = __read_command("school_insert_entry.sql")
+SQL_SCHOOL_READ_ALL_PUBLIC = __read_command("school_read_all_public.sql")
+
+SQL_USER_INSERT_ENTRY = __read_command("user_insert_entry.sql")

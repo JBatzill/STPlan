@@ -55,7 +55,7 @@ def __process_schedule(db, data):
     ctrl_schedule.delete_schedules(db, delete_list)
     ctrl_schedule.update_schedules(db, update_list)
 
-    get_log_supp().info("schedule: %s added, %s updated, %s deleted:" % (len(insert_list), len(update_list), len(delete_list)))
+    get_log_supp().info("schedule: %s added, %s updated, %s deleted." % (len(insert_list), len(update_list), len(delete_list)))
 
 
 def __process_notifications(db, data):
@@ -88,7 +88,7 @@ def __process_notifications(db, data):
     ctrl_notification.insert_notifications(db, insert_list)
     ctrl_notification.delete_notifications(db, delete_list)
 
-    get_log_supp().info("notifications: %s added, %s deleted:" % (len(insert_list), len(delete_list)))
+    get_log_supp().info("notifications: %s added, %s deleted." % (len(insert_list), len(delete_list)))
 
 
 def sort_schedule(data):
