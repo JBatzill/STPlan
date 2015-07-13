@@ -1,0 +1,1 @@
+SELECT _id, _name, _shortcut, _city  FROM 'school' WHERE _id = :_id;

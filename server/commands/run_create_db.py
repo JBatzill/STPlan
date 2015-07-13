@@ -14,9 +14,7 @@ print("!!!  This will delete all existing data !!!")
 answer = input("y\\n?: ")
 
 if answer == "y":
-    print("Creating new database ...")
     get_log_db().info("Creating new database")
     init_db()
     get_log_db().info("New database created!")
-    print("New database created!")
     input()

@@ -6,7 +6,9 @@ DEBUG = True #False
 HOST = 'localhost' #'0.0.0.0'
 PORT = 42142
 SERVER_NAME = 'localhost:%s' % PORT #'batzill.net:%s' % PORT
-#Rest server.JSON
+SUBDOMAIN = "stplan"
+
+#JSON
 JSON_ATT_SEPERATOR = ','
 JSON_DIC_SEPERATOR = ':'
 

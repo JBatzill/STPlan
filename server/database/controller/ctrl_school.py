@@ -23,10 +23,13 @@ def add_school(db, _name, _shortcut, _url, _city, _username="", _password="", _s
     dic = create_dictionary(_name=_name, _shortcut=_shortcut, _schedule_url=_url, _city=_city,
                             _username=_username, _password=_password, _state=_state, _country=_country,
                             _last_update_info=CREATION_UPDATE_INFO)
-    return database.insert_db(db, sql_commands.SQL_SCHOOL_INSERT_ENTRY, dic, True)
+    return database.insert_db(db, sql_commands.SQL_SCHOOL_INSERT_ENTRY, dic)
 
-def get_schools(db):
+def get_schools_all(db):
     return database.query_db(db, sql_commands.SQL_SCHOOL_READ_ALL)
+
+def get_schools_public(db):
+    return database.query_db(db, sql_commands.SQL_SCHOOL_READ_ALL_PUBLIC)
 
 def get_school(db, _school_id):
     if int(_school_id) < 0:
@@ -34,3 +37,25 @@ def get_school(db, _school_id):
 
     dic = create_dictionary(_id=_school_id)
     return database.query_db(db, sql_commands.SQL_SCHOOL_READ_ID, dic, True)
+
+def get_school_public(db, _school_id):
+    if int(_school_id) < 0:
+        raise ValueError("school id must be at least 0!")
+
+    dic = create_dictionary(_id=_school_id)
+    return database.query_db(db, sql_commands.SQL_SCHOOL_READ_PUBLIC_ID, dic, True)
+
+def update_school_url(db, _school_id, _new_url):
+    if int(_school_id) < 0:
+        raise ValueError("school id must be at least 0!")
+
+    dic = create_dictionary(_id=_school_id, _schedule_url=_new_url)
+    return database.submit_db(db, sql_commands.SQL_SCHOOL_UPDATE_URL, dic)
+
+
+def delete_school(db, _school_id):
+    if int(_school_id) < 0:
+        raise ValueError("school id must be at least 0!")
+
+    dic = create_dictionary(_id=_school_id)
+    return database.submit_db(db, sql_commands.SQL_SCHOOL_DELETE_ID, dic)

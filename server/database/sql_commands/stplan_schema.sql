@@ -15,6 +15,12 @@ CREATE TABLE school (
 );
 
 
+
+
+
+
+
+
 DROP TABLE IF EXISTS schedule;
 CREATE TABLE schedule (
   _id INTEGER,
@@ -40,6 +46,15 @@ ON schedule(_school_id, _date, _class);
 CREATE UNIQUE INDEX index_schedule_unique
 ON schedule(_school_id, _date, _class,_time,_teacher,_new_teacher);
 
+
+
+
+
+
+
+
+
+
 DROP TABLE IF EXISTS notification;
 CREATE TABLE notification (
   _id INTEGER,
@@ -52,20 +67,36 @@ CREATE TABLE notification (
   FOREIGN KEY(_school_id) REFERENCES school(_id)
 );
 
+
+
+
+
+
+
+
 DROP TABLE IF EXISTS user;
-CREATE TABLE user {
+CREATE TABLE user (
   _id INTEGER,
   _uuid VARCHAR(128),
   _reg_id TEXT,
 
   PRIMARY KEY(_id)
-};
+);
 
-CREATE UNIQUE INDEX index_user
+CREATE UNIQUE INDEX index_user_id
 ON user(_uuid);
+CREATE UNIQUE INDEX index_user_reg_id
+ON user(_reg_id);
+
+
+
+
+
+
+
 
 DROP TABLE IF EXISTS subscription;
-CREATE TABLE subscription {
+CREATE TABLE subscription (
   _id INTEGER,
   _user_id INTEGER,
   _school_id INTEGER,
@@ -74,7 +105,9 @@ CREATE TABLE subscription {
   PRIMARY KEY(_id),
   FOREIGN KEY(_user_id) REFERENCES user(_id),
   FOREIGN KEY(_school_id) REFERENCES school(_id)
-};
+);
 
 CREATE INDEX index_sub
 ON subscription(_user_id);
+CREATE UNIQUE INDEX index_sub_unique
+ON subscription(_user_id, _school_id, _class);

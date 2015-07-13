@@ -24,13 +24,11 @@ country = input("(country) [2-32]: ")
 answer = input("\nadd school y\\n: ")
 
 if answer == "y":
-    print("adding school ...")
     get_log_db().info("adding school")
-    db = database.connect_db();
+    db = database.connect_db()
 
     try:
         row_id = ctrl_school.add_school(db, name, shortcut, url, city, username, pw, state, country)
-        print(name + " added, id: " + str(row_id))
         get_log_db().info(name + " added, id: " +str(row_id))
         open(os.path.join(MAIN_DIR, "..", "database", "school.id"), "a+").write(name + ", " + city + ": " + str(row_id) + "\n")
     except ValueError as e:

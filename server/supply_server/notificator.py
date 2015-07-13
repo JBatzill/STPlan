@@ -4,8 +4,6 @@ from general import config
 
 
 #constants
-__TOPIC_BASE_STRING = "/topic/"
-__TOPIC_SEPARATOR = "~"
 
 __gcm = GCM(config.GCM_KEY)
 
@@ -23,9 +21,6 @@ def __get_time_to_live(expire_date):
 
 
 def __get_topic_name(_school_id, _class):
-    if not _class:
-        return __TOPIC_BASE_STRING + _school_id
-    else:
-        return __TOPIC_BASE_STRING + _school_id + __TOPIC_SEPARATOR + _class.lower()
+    pass
 
 
