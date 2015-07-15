@@ -6,8 +6,8 @@ from OpenSSL import crypto
 
 def create_key_certificate_pair(host, country, company, years, key_file, cert_file):
     # create a key pair
-    k = crypto.PKey()
-    k.generate_key(crypto.TYPE_RSA, 1024)
+    key = crypto.PKey()
+    key.generate_key(crypto.TYPE_RSA, 1024)
 
     # create a self-signed cert
     cert = crypto.X509()
@@ -18,10 +18,12 @@ def create_key_certificate_pair(host, country, company, years, key_file, cert_fi
     cert.gmtime_adj_notBefore(0)
     cert.gmtime_adj_notAfter(years*365*24*60*60)
     cert.set_issuer(cert.get_subject())
-    cert.set_pubkey(k)
-    cert.sign(k, 'sha1')
+    cert.set_pubkey(key)
+    cert.sign(key, 'sha1')
 
-    open(cert_file, "wt").write(
-        str(crypto.dump_certificate(crypto.FILETYPE_PEM, cert)))
-    open(key_file, "wt").write(
-        str(crypto.dump_privatekey(crypto.FILETYPE_PEM, k)))
+    c = crypto.dump_certificate(crypto.FILETYPE_PEM, cert)
+    k = crypto.dump_privatekey(crypto.FILETYPE_PEM, key)
+
+
+    open(cert_file, "wb").write(c)
+    open(key_file, "wb").write(k)

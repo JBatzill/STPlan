@@ -2,37 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e00d7d03-3174-46d4-9d78-b9eb027d1bdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest_server/pages/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest_server/pages/page_notification.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest_server/pages/page_schedule.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest_server/pages/page_school.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest_server/pages/page_subscription.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest_server/pages/page_user.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/school_delete_id.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/school_read_public_id.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/school_update_url.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/sub_delete_entry.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/sub_delete_entry_id.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/sub_read_school_id.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/sub_read_uuid.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/user_delete_reg_id.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/user_delete_uuid.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/user_read_id_by_uuid.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/sql_commands/user_update_reg_id.sql" />
-      <change type="DELETED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\rest_server\definitions.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\rest_server\main.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/sql_commands/__init__.py" afterPath="$PROJECT_DIR$/database/sql_commands/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/general/__init__.py" afterPath="$PROJECT_DIR$/general/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Johannes\Documents\Workspaces\MultiProjects\STPlan\server\rest_server\ssl\__init__.py" afterPath="$PROJECT_DIR$/rest_server/security/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest_server/__init__.py" afterPath="$PROJECT_DIR$/rest_server/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/general/config.py" afterPath="$PROJECT_DIR$/general/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/controller/ctrl_school.py" afterPath="$PROJECT_DIR$/database/controller/ctrl_school.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/controller/ctrl_subscription.py" afterPath="$PROJECT_DIR$/database/controller/ctrl_subscription.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/controller/ctrl_user.py" afterPath="$PROJECT_DIR$/database/controller/ctrl_user.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supply_server/notificator.py" afterPath="$PROJECT_DIR$/supply_server/notificator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/run_add_school.py" afterPath="$PROJECT_DIR$/commands/run_add_school.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/run_create_db.py" afterPath="$PROJECT_DIR$/commands/run_create_db.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/run_rest.py" afterPath="$PROJECT_DIR$/commands/run_rest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/run_setup_ssl.py" afterPath="$PROJECT_DIR$/commands/run_setup_ssl.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/sql_commands/stplan_schema.sql" afterPath="$PROJECT_DIR$/database/sql_commands/stplan_schema.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Server.iws" />
@@ -54,112 +28,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ctrl_subscription.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/controller/ctrl_subscription.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest_server/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="84" selection-start-line="34" selection-start-column="84" selection-end-line="34" selection-end-column="84" />
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssl.cert" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest_server/security/ssl.cert">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ctrl_schedule.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/controller/ctrl_schedule.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctrl_school.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/controller/ctrl_school.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="71" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctrl_user.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/controller/ctrl_user.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supply_server/parser/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stplan_schema.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/sql_commands/stplan_schema.sql">
+      <file leaf-file-name="ssl.key" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest_server/security/ssl.key">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.592721">
-              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_user.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest_server/pages/page_user.py">
+      <file leaf-file-name="parser_result.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supply_server/parser/parser_result.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="6" selection-end-column="34" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_subscription.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest_server/pages/page_subscription.py">
+      <file leaf-file-name="parser_wieland_gymnasium.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supply_server/parser/parser_wieland_gymnasium.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supply_server/processor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#0#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_school.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest_server/pages/page_school.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest_server/security/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_schedule.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest_server/pages/page_schedule.py">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/general/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
+              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_notification.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest_server/pages/page_notification.py">
+      <file leaf-file-name="run_setup_ssl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commands/run_setup_ssl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.54931974">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,11 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/supply_server/parser/parser_wieland_gymnasium.py" />
-        <option value="$PROJECT_DIR$/logger/__init__.py" />
-        <option value="$PROJECT_DIR$/supply_server/processor.py" />
-        <option value="$PROJECT_DIR$/supply_server/gcm.py" />
-        <option value="C:/Python34/Lib/site-packages/gcm/__init__.py" />
         <option value="C:/Python34/Lib/site-packages/gcm/gcm.py" />
         <option value="$PROJECT_DIR$/commands/run_gcm_test.py" />
         <option value="$PROJECT_DIR$/database/sql_commands/school_insert_entry.sql" />
@@ -198,8 +163,6 @@
         <option value="$PROJECT_DIR$/database/sql_commands/school_read_id.sql" />
         <option value="$PROJECT_DIR$/database/sql_commands/user_insert_entry.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/rest_server/ssl/__init__.py" />
-        <option value="$PROJECT_DIR$/rest_server/ssl/ssl.key" />
         <option value="$PROJECT_DIR$/database/sql_commands/user_delete_uuid.sql" />
         <option value="$PROJECT_DIR$/database/sql_commands/user_delete_reg_id.sql" />
         <option value="$PROJECT_DIR$/database/sql_commands/user_update_reg_id.sql" />
@@ -221,12 +184,9 @@
         <option value="$PROJECT_DIR$/database/sql_commands/__init__.py" />
         <option value="$PROJECT_DIR$/database/sql_commands/user_read_id_by_uuid.sql" />
         <option value="$PROJECT_DIR$/rest_server/definitions.py" />
-        <option value="$PROJECT_DIR$/general/config.py" />
-        <option value="$PROJECT_DIR$/rest_server/__init__.py" />
         <option value="$PROJECT_DIR$/rest_server/pages/page_schedule.py" />
         <option value="$PROJECT_DIR$/rest_server/pages/page_notification.py" />
         <option value="$PROJECT_DIR$/commands/run_create_db.py" />
-        <option value="$PROJECT_DIR$/commands/run_setup_ssl.py" />
         <option value="$PROJECT_DIR$/commands/run_add_school.py" />
         <option value="$PROJECT_DIR$/supply_server/notificator.py" />
         <option value="$PROJECT_DIR$/database/controller/ctrl_user.py" />
@@ -235,6 +195,16 @@
         <option value="$PROJECT_DIR$/rest_server/pages/page_school.py" />
         <option value="$PROJECT_DIR$/rest_server/pages/page_subscription.py" />
         <option value="$PROJECT_DIR$/database/sql_commands/stplan_schema.sql" />
+        <option value="$PROJECT_DIR$/rest_server/ssl/ssl.cert" />
+        <option value="$PROJECT_DIR$/rest_server/ssl/ssl.key" />
+        <option value="$PROJECT_DIR$/rest_server/ssl/__init__.py" />
+        <option value="$PROJECT_DIR$/general/config.py" />
+        <option value="$PROJECT_DIR$/commands/run_rest.py" />
+        <option value="$PROJECT_DIR$/rest_server/security/ssl.cert" />
+        <option value="$PROJECT_DIR$/rest_server/security/ssl.key" />
+        <option value="$PROJECT_DIR$/rest_server/__init__.py" />
+        <option value="$PROJECT_DIR$/rest_server/security/__init__.py" />
+        <option value="$PROJECT_DIR$/commands/run_setup_ssl.py" />
       </list>
     </option>
   </component>
@@ -242,10 +212,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -270,6 +239,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -332,6 +302,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rest_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,24 +415,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sql_commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -465,7 +435,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -708,9 +677,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.run_rest (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.run_create_db" />
-        <item index="2" class="java.lang.String" itemvalue="Python.run_add_school" />
-        <item index="3" class="java.lang.String" itemvalue="Python.run_setup_ssl" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run_setup_ssl" />
+        <item index="2" class="java.lang.String" itemvalue="Python.run_create_db" />
+        <item index="3" class="java.lang.String" itemvalue="Python.run_add_school" />
         <item index="4" class="java.lang.String" itemvalue="Python.run_gcm_test" />
       </list>
     </recent_temporary>
@@ -954,7 +923,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436656358556</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="database&#10;+extended controler&#10;+added a bunch of new sql queries&#10;+changed sql schema&#10;&#10;general&#10;+added subdomain&#10;&#10;rest_server:&#10;+splitted main in different 'pages'">
+      <created>1436754616856</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1436754616856</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -967,27 +942,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15806112" sideWeight="0.49624062" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27982646" sideWeight="0.49624062" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.50632244" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32048458" sideWeight="0.49367756" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31675676" sideWeight="0.4915701" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3215859" sideWeight="0.4915701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3665254" sideWeight="0.5037594" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39675677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38961038" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1024,7 +999,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="logging&#10;+added basics&#10;&#10;commands&#10;+added logging&#10;&#10;supply_server&#10;+added remove day&#10;+added check for update of website" />
     <MESSAGE value="commands&#10;+added host and port integration in run method&#10;&#10;config&#10;+added host and port&#10;&#10;rest_server&#10;+added json response" />
     <MESSAGE value="made scripts executable" />
     <MESSAGE value="marked server folder as source root" />
@@ -1049,7 +1023,8 @@
     <MESSAGE value="removed error, added pass in empty process function" />
     <MESSAGE value="commands&#10;+renaming&#10;&#10;database&#10;+added notification controler&#10;+added unique real key function to schedule controller&#10;+added basec db functions to schedule controller&#10;+fixed school_id &lt; 0 check in all controller&#10;+added assumptions&#10;&#10;sql-commands&#10;+added basic sql commands for notification + schedule&#10;+fixed database schema&#10;&#10;supply-server&#10;+added parser result class&#10;+fixed wieland gymnasium parser&#10;+added notification support for wg parser&#10;+implemented processor&#10;&#10;" />
     <MESSAGE value="database&#10;+added user + ctrl&#10;+added subs + ctrl&#10;&#10;general&#10;+added ssl stuff&#10;&#10;logger&#10;+added DEBUG  --&gt; print stuff&#10;&#10;rest-server&#10;+added ssl key cert creation method" />
-    <option name="LAST_COMMIT_MESSAGE" value="database&#10;+added user + ctrl&#10;+added subs + ctrl&#10;&#10;general&#10;+added ssl stuff&#10;&#10;logger&#10;+added DEBUG  --&gt; print stuff&#10;&#10;rest-server&#10;+added ssl key cert creation method" />
+    <MESSAGE value="database&#10;+extended controler&#10;+added a bunch of new sql queries&#10;+changed sql schema&#10;&#10;general&#10;+added subdomain&#10;&#10;rest_server:&#10;+splitted main in different 'pages'" />
+    <option name="LAST_COMMIT_MESSAGE" value="database&#10;+extended controler&#10;+added a bunch of new sql queries&#10;+changed sql schema&#10;&#10;general&#10;+added subdomain&#10;&#10;rest_server:&#10;+splitted main in different 'pages'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1072,39 +1047,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="53" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/supply_server/parser/parser_result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supply_server/parser/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/sql_commands/schedule_insert_entry.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/sql_commands/school_read_all.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/sql_commands/school_read_id.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1131,20 +1078,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest_server/ssl/ssl.key">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest_server/ssl/ssl.cert">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="98" selection-start-line="0" selection-start-column="98" selection-end-line="0" selection-end-column="98" />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,15 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest_server/ssl/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,7 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="67" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,7 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1271,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,31 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest_server/rest_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/general/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest_server/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="105" selection-start-line="11" selection-start-column="105" selection-end-line="11" selection-end-column="105" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,23 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/run_setup_ssl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/run_rest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1351,7 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1359,7 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1367,7 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1375,7 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1383,9 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1418,7 +1287,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1428,7 +1297,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="27" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1438,17 +1307,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest_server/pages/page_notification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1466,15 +1325,127 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/sql_commands/stplan_schema.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.592721">
-          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest_server/rest_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/run_rest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest_server/pages/page_notification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supply_server/parser/parser_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supply_server/parser/parser_wieland_gymnasium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supply_server/processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest_server/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest_server/security/ssl.key">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest_server/security/ssl.cert">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supply_server/parser/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest_server/security/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/general/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/run_setup_ssl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54931974">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

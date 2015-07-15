@@ -30,8 +30,8 @@ LOG_HISTORY_SIZE = 10
 GCM_KEY = 'AIzaSyCSXpMmauRTX6D2Qnmul8CNpkOufrbH8nQ'
 
 #Security
-SSL_KEY = os.path.join('rest_server', 'ssl', 'ssl.key')
-SSL_CERT = os.path.join('rest_server', 'ssl', 'ssl.cert')
+SSL_KEY = os.path.join('rest_server', 'security', 'ssl.key')
+SSL_CERT = os.path.join('rest_server', 'security', 'ssl.cert')
 SSL_CERT_DURATION = 10  # in years
 SSL_COMPANY = 'Batzill'
 SSL_COUNTRY = 'DE'
